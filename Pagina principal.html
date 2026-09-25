@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pagina Implementación</title>
+<style>
+body {
+  margin: 0;
+  font-family:'Roboto', sans-serif;
+  background-color: black; 
+  padding-top: 70px;
+}
+header {  
+background-color: black;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  color: white;
+}
+
+.icono {
+  width: 30px; 
+  height: 30px;
+  filter: invert(1); 
+}	
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.navbar ul li {
+  position: relative;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  display: block;
+}
+.navbar ul li:hover > a {
+  background: #52c234; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #061700, #52c234); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #061700, #52c234); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+Click to copy;
+  color: #fff;
+}
+.navbar ul li ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: black;
+  display: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1000; 
+}
+.navbar ul li:hover ul {
+  display: block;
+}
+.navbar ul li ul li {
+  width: 180px;
+}
+.navbar ul li ul li a {
+  padding: 10px;
+}
+.logo {
+  margin-left: auto; /* empuja el logo a la derecha */
+}
+	.hero {
+  position: relative;
+  height: 80vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.8s ease-in-out; 
+}
+.hero h1 {
+  font-size: 48px;
+  margin: 10px 0;
+}
+.hero p {
+  font-size: 20px;
+}
+.footer {
+background: #152331;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #000000, #152331);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #000000, #152331); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}
+.hero button {
+  background: #52c234; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #061700, #52c234); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #061700, #52c234); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+Click to copy;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.hero button:hover {
+  background-color: #45a049;
+}
+.flechas {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.flecha {
+  cursor: pointer;
+  font-size: 40px;
+  color: white;
+  padding: 10px;
+  user-select: none;
+}
+
+.flecha:hover {
+  color: #4CAF50;
+}
+.mini-botones {
+  margin-top: 10px;
+}
+.btn-mini {
+  display: inline-block;
+  margin: 5px;
+  padding: 6px 12px;
+  font-size: 12px;
+  background-color: ##434343;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.btn-mini:hover {
+  background-color: white;}
+</style>
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#">SOMOS+</a>
+        <ul>
+        <li><a href="https://admin.somosinternet.com/" target="_blank">Artemis 🤖</a></li>
+        <li><a href="https://somosinternet.buk.co/users/sign_in" target="_blank">BUK 🤖</a></li>
+        <li><a href="https://app.slack.com/client" target="_blank">Slack 🤖</a></li>
+        <li><a href="https://app.clickup.com/login" target="_blank">Clikup 🤖</a></li>
+		<li><a href="https://sistegra.com.co/login" target="_blank">Sistegra 🤖</a></li>
+	    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc7oEoogRXDEdJE2Tjwo2VpplF1apzivIIdbA06VCO6H7Bq9g/viewform" target="_blank">Solicitud de Soporte de PC 🤖</a></li>
+        <li><a href="https://www.virustotal.com/" target="_blank">Virus total 🤖</a></li>
+        </ul>
+      </li>
+    
+		
+      <li><a href="#">IMPLEMENTACIÓN</a>
+        <ul>
+		<li><a href="https://gestion-de-tiempos-a0c87.web.app/" target="_blank">Gestión de tiempos🤖</a></li>
+        <li><a href="https://app.slack.com/client" target="_blank">Slack 🤖</a></li>
+        <li><a href="https://web.whatsapp.com/" target="_blank">Whatsapp web 🤖</a></li>	
+		<li><a href="https://docs.google.com/spreadsheets/d/1E4lzA_HWcZeJIYyHV-zFUYtiVCy2xqtxaQC6xEXMWq8/edit?gid=1647195205#gid=1647195205" target="_blank">Sheet Orden-Novedades🤖</a></li>	
+        <li><a href="https://docs.google.com/spreadsheets/d/1CnMHLpqCiY5MTrIQCP8ILCY5A_AQfBJgAqfJJduRqcQ/edit?gid=366444985#gid=366444985" target="_blank">Sheet Control de Hilos 🤖</a></li>
+	    <li><a href="https://docs.google.com/spreadsheets/d/1RF9SX4SS3FHVbMlcnszl1q4hBvpaAO7GD531Ug3cl1A/edit?gid=1819930430#gid=1819930430" target="_blank">Sheet IPV4 Addressing 🤖</a></li>
+		<li><a href="https://script.google.com/a/macros/somosinternet.co/s/AKfycbzCZ8RDrY2R10cGAmf7lg1AEj_y-3guWhHOM71T1gM/dev" target="_blank">Lector de IP´S 🤖</a></li>
+		<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdkLamLvy445d8-rp45huRstrYllcuVm3ohqtlTKGNTsfYsmg/viewform" target="_blank">Activación Sitios Poe 🤖</a></li>	
+        <li><a href="http://security.somosinternet.net/somos/login" target="_blank">Verificacion de Mac  🤖</a></li>
+		<li><a href="https://lambda-d.web.app/" target="_blank">Lambda 🤖</a></li>	
+          </ul>
+		  
+		   <li><a href="#">COFIGURACIONES Y VERIFICACONES</a>
+        <ul>
+        <li><a href="https://docs.google.com/spreadsheets/d/1Q8Sy5PcM7go0yx32em7bb6MNgFhfm8bH3BYz4h87ECY/edit?gid=0#gid=0" target="_blank">Trazabilidad 🤖 </a></li>
+         <li><a href="https://drive.google.com/drive/u/0/home" target="_blank">Drive carpetas compartidas 🤖</a></li>
+		<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfLTkDxXTstwQWxAKElZ3mFAIKteY2ujPqRhZ3GDLa9-Md2ug/viewform" target="_blank">Reporte de equipos dañados Implementación 🤖</a></li>  	
+        </ul>
+		
+		<li><a href="#">TOPOLOGÍA</a>
+        <ul>
+        <li><a href="https://docs.google.com/spreadsheets/d/1H262SXKSw94N5vLQ0G47QGqH2DxB_OS6SWaIc_xCndU/edit?gid=314168379#gid=314168379" target="_blank">Sheet Creación de Topologías 🤖</a></li>
+         <li><a href="https://script.google.com/a/macros/somosinternet.co/s/AKfycbzX7QDTC1OHx1GQU-Pojv9hiNCap53_TUKXR5ZD8wmR45TR2xrvEQ52sPH0SKy3cNZB_g/exec" target="_blank">Generador de Topologías 🤖</a></li>
+		 <li><a href="https://docs.google.com/spreadsheets/d/1Fl3F3gcF7gWndFNXXsWA0xoQKs0FF8bf/edit?gid=1178293192#gid=1178293192" target="_blank">Sheet-Datos Organizados 🤖</a></li>	
+         <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf87yq8kQViAkAFUgVUXi3oEBQuQlPn7Xj7hcgJoaW9w5J0dQ/viewform" target="_blank">Evaluación de Información de Topologias 🤖</a></li>         
+        </ul>	   
+			   
+        <li><a href="#">CAPACITACIONES</a>
+        <ul>
+        <li><a href="https://sites.google.com/somosinternet.co/somos-academia/p%C3%A1gina-principal" target="_blank">Energia Electrica 🤖</a></li>
+         <li><a href="https://drive.google.com/drive/folders/11QAiNM2OyUKQs5O4_7FOgFTHqrmdagCY" target="_blank">Capacitaciones 2025 🤖</a></li>
+         <li><a href="https://sites.google.com/somosinternet.co/somos-implementacion/home" target="_blank">SOMOS - IMPLEMENTACIÓN 🤖</a></li>    			</ul></li></ul>
+  
+<!-- Logo + icono alineado a la derecha -->
+    <div class="logo">
+      <strong>
+SOMOS NETWORKS COLOMBIA S.A.S</strong>
+      <img src="https://pbs.twimg.com/profile_images/1736752338696622080/5n__qJJC.jpg" 
+           alt="icono somos" class="icono">
+    </div>
+  </nav>
+</header>			
+			
+
+<section class="hero">
+  <h2>BIENVENIDO A</h2>
+  <h1>IMPLEMENTACIÓN <br></h1>
+  <button onclick="window.open('https://www.somosinternet.com/', '_blank')">"Come on, today is going to be a good day" </button>
+    <!-- Flechas -->
+  <div class="flechas">
+    <span class="flecha izquierda">&#10094;</span>
+    <span class="flecha derecha">&#10095;</span>
+  </div>
+</section>
+
+<script>
+const fondos = ["https://i.imgur.com/omGJBFS.png",
+  "https://staticprd.minuto30.com/wp-content/uploads/2024/04/SOMOS_ESPACIOS-88.jpg",
+   "https://i.imgur.com/z8gcudR.jpg",
+  "https://estaticos.elcolombiano.com/binrepository/600x450/0c0/780d565/none/11101/XVME/somos-internet-ofertas-laborales-colombia_48507894_20250808100052.jpg",
+  "https://picsum.photos/1200/800?random=1",
+  "https://i.imgur.com/oVjTlYd.jpg",
+  "https://i.imgur.com/w1QjGZm.jpg",
+  "https://picsum.photos/1200/800?random=2"	
+];
+
+let indice = 0;
+const hero = document.querySelector(".hero");
+
+// Inicializar con la primera imagen
+hero.style.backgroundImage = `url(${fondos[indice]})`;
+
+document.querySelector(".flecha.derecha").addEventListener("click", () => {
+  indice = (indice + 1) % fondos.length;
+  hero.style.backgroundImage = `url(${fondos[indice]})`;
+});
+
+document.querySelector(".flecha.izquierda").addEventListener("click", () => {
+  indice = (indice - 1 + fondos.length) % fondos.length;
+  hero.style.backgroundImage = `url(${fondos[indice]})`;
+});
+</script>
+
+<footer class="footer">
+  <p>Somos Internet | Desarrollado por el Equipo de Implementación <br>
+  © 2026</p>
+  <!-- Bloque de botones pequeños -->
+  <div class="mini-botones">
+    <a href="https://www.google.com/fbx?fbx=snake_arcade" target="_blank" class="btn-mini">A</a>
+    <a href="https://www.google.com/fbx?fbx=block_breaker&fbxga=0&hl=en&origin=www.google.com" target="_blank" class="btn-mini">B</a>
+    <a href="https://www.google.com/fbx?fbx=minesweeper" target="_blank" class="btn-mini">C</a>
+    <a href="https://www.google.com/logos/2010/pacman10-i.html" target="_blank" class="btn-mini">D</a>
+  </div>
+</footer>
+</body>
+</html>
